@@ -19,38 +19,45 @@
  nav{
   position: fixed;
       background: rgba(0, 0, 0, 0.2);
-      padding:0px 20px;
  }
 
+ li {
+   font-size: 20px;
+  color: whitesmoke;
+ }
  nav li a:hover{
-   background: aqua;
+    color: aqua;
+    border: solid aqua 3px;
  }
 .jumbotron {
   background:url('../images/bg.png') top center;
   background-size: cover;
   padding-top: 12em;
   padding-bottom: 12em;
+  flex: 1;
 }
-.jumbotron h2 {
-  margin: 0;
+.jumbotron h1 {
+  margin: 0 auto;
   padding: 0;
-  font-size: 2em;
+  font-size: 500%;
   color: whitesmoke;
   font-family: 'Cormorant Garamond', serif;
   text-transform: uppercase;
   font-weight: bold;
+  vertical-align: middle;
+  display: table-cell;
+  max-width: 500px;
 }
 
-.jumbotron p{
+.jumbotron .lead p{
   margin-top: 1em;
   padding: 0;
-  font-size: 1em;
+  font-size: 100%;
   font-family: 'M PLUS 1p', sans-serif;
   color: whitesmoke;
 }
 
-.jumbotron .btn{
- border-radius: 0;
+.jumbotron{
  padding-left: 20px;
  padding-right: 20px;
  background-color: transparent !important;
@@ -59,6 +66,51 @@
 .bg-dark{
   background-color: transparent !important;
 }
-.btn:hover{
-  background: aqua;
-}
+.btn {
+  color: whitesmoke;
+  font-size: 125%;
+  border: solid #whitesmoke 3px;
+  border-radius: 9px;
+  font-family: 'Oswald',sans-serif;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  background-color: transparent !important;
+  text-decoration: none;
+  vertical-align: middle;
+  }
+  .btn:hover {
+    color: aqua;
+    border: solid aqua 3px;
+  }
+  @media screen and (max-width: 980px) 
+  {
+    
+    }
+
+  @media screen and (max-width: 768px) 
+  {
+    .jumbotron h1{
+      font-size: 330%;
+    }
+    .btn {
+      font-size: 110;
+      padding: 7px 15px;
+    }
+    p {
+      font-size: 100%;
+      line-height: 150%;
+    }
+  }
+
+
+  @media screen and (max-width: 640px) {
+    nav {
+      text-align: center;
+      width: 100%;
+     }
+    nav li {
+      width: 30%;
+      padding-left: 0;
+      margin-left: 0;
+      }  
+  }

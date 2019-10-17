@@ -3,55 +3,95 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio | Your Name</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Bootstrap Portfolio V2</title>
 </head>
-
 <body>
+    <nav>
+      <div class="nav-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <img src="assets/images/logo.png" alt="">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <li><a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li><a class="nav-item nav-link" href="portfolio.html">Portfolio</a></li>
+              <li><a class="nav-item nav-link" href="contact.html">Contact Me</a></li>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+
+  <div id="Portfolio">
+  <div class="jumbotron container-fluid" id="home">
+    <div class="row no-padding">
+      <h3>Portfolio</h3>
+
+      <div class="col-sm-4">
+        <div class="Portfolio">
+          <a href="assets/images/FC1.jpg">
+            <img src="assets/images/FC1.jpg" Target="blank">
+          </a>
+          <h3>Word Guess</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="Portfolio">
+          <a href="assets/images/Pho2.jpg">
+            <img src="assets/images/Pho2.jpg" alt="RPG Game">
+          </a>
+          <h3>RPG Game</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="Portfolio">
+          <a href="assets/images/Pho3.jpg">
+            <img src="assets/images/Pho3.jpg" alt="Trivia Game">
+            <div class="row no-padding">
+          </a>
+          <h3>Trivia Game</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="Portfolio">
+          <a href="assets/images/Pho4.jpg">
+            <img src="assets/images/Pho4.jpg" alt="Rutgers Info Widget">
+          </a>
+          <h3>Upenn Info Widget</h3>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="Portfolio">
+          <a href="assets/images/FC5.jpg">
+            <img src="assets/images/FC5.jpg" alt="Rock Paper Scissors">
+          </a>
+          <h3>Rock Paper Scissors</h3>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Portfolio</h1>
-
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-1.jpg" alt="Word Guess">
-
-        <h3>Word Guess</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-2.jpg" alt="RPG Game">
-
-        <h3>RPG Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-5.jpg" alt="Trivia Game">
-
-        <h3>Trivia Game</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-7.jpg" alt="Rutgers Info Widget">
-
-        <h3>Rutgers Info Widget</h3>
-      </div>
-      <div class="work">
-        <img src="assets/images/technics-q-c-640-480-9.jpg" alt="Rock Paper Scissors">
-
-        <h3>Rock Paper Scissors</h3>
-      </div>
-
-    </section>
-
+      </section>
+    </div>
+  </div>
+  </div>
+  </div>
   </div>
 
   <footer>

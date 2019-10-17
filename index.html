@@ -26,44 +26,49 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <li><a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a></li>
-            <li><a class="nav-item nav-link" href="#">Portfolio</a></li>
-            <li><a class="nav-item nav-link" href="#">Contact Me</a></li>
+            <li><a class="nav-item nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li><a class="nav-item nav-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav-item nav-link" href="contact.html">Contact Me</a></li>
           </div>
         </div>
       </nav>
     </div>
   </nav>
 
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
+  <div class="jumbotron" id="home">
+    <div class="container text-center">
+        <div class="col-lg-4 col-lg-offset-4">
+          <h1>Welcome To My World</h1>
+          <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="checkbox" checked autocomplete="off"> Read More
+            </div>
+            </label>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h2 class="display-4">A Little About Me</h2>
-          <p class="lead">I have 4 older sisters and 2 brothers, My favorite food is Fried Chicken and Ketchup. My
+      </div>
+    </div>
+  </div>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+        <p class="lead">I have 4 older sisters and 2 brothers, My favorite food is Fried Chicken and Ketchup. My
             favorite drink
             is Diet Coke! I
             also love pho which is why I have two restaurants dedicated to the most south east
             noodle soup dish
             called Pho. Because it's "Pho-king" amazing.</p>
-          <hr class="my-4">
-          <p>By the way the girl in my profile picture with me is my Beautiful girlfriend, wannabe
+          <hr class="my-6">
+          <p class="lead">By the way the girl in my profile picture with me is my Beautiful girlfriend, wannabe
             powerlifter, shes
             freaking smart as well. She is in school as a clinical psychologist. But she doesn't
             realize she
             stresses me out and I might need a therapist soon because of her. She also wants to
             marry me. Please Do not take this seriously!</p>
           </br>
-          <div class="btn-group-toggle" data-toggle="buttons">
-              <label class="btn btn-secondary active">
-                <input type="checkbox" checked autocomplete="off"> Read More
-              </label>
-            </div>
-        </div>
-      </div>
-    </div>
+    </section>
+
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
