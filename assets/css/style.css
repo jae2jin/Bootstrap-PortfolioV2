@@ -8,6 +8,58 @@
   z-index: 10;
   width: 100%;
 }
+#main-container {
+  padding-top: 130px;
+}
+.main-section {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 70%;
+  float: left;
+}
+.work {
+  position: relative;
+  width: 274px;
+  overflow: auto;
+  float: left;
+  margin: 20px 0 25px;
+  font-family: 'M PLUS 1p', sans-serif;
+}
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+.work img {
+  width: 100%;
+  opacity: .9;
+
+}
+.work h3 {
+  color: #fff;
+  background-color: aqua;
+  opacity: .6;
+  position: absolute;
+  bottom: 20px;
+  margin-bottom: 0;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+  border-bottom: 0;
+}
+#Project-Container {
+  padding-top: 130px;
+}
+.Project-Container {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 30px;
+  margin: 0 0 40px 0;
+  width: 70%;
+  float: left;
+}
 
 .container-fluid {
   width: 100%;
@@ -33,12 +85,11 @@
   background:url('../images/bg.png') top center;
   background-size: cover;
   padding-top: 12em;
-  padding-bottom: 12em;
   flex: 1;
 }
 .jumbotron h1 {
   margin: 0 auto;
-  padding: 0;
+
   font-size: 500%;
   color: whitesmoke;
   font-family: 'Cormorant Garamond', serif;
@@ -49,9 +100,8 @@
   max-width: 500px;
 }
 
-.jumbotron .lead p{
+.jumbotron P {
   margin-top: 1em;
-  padding: 0;
   font-size: 100%;
   font-family: 'M PLUS 1p', sans-serif;
   color: whitesmoke;
@@ -60,6 +110,7 @@
 .jumbotron{
  padding-left: 20px;
  padding-right: 20px;
+ margin-bottom: 0;
  background-color: transparent !important;
  border-color: #dcdcdc;
 }
@@ -82,24 +133,33 @@
     color: aqua;
     border: solid aqua 3px;
   }
-  @media screen and (max-width: 980px) 
-  {
-    
-    }
+  .page-footer {
+    background:url('../images/bg2.png') bottom center;
+    background-size: cover;
+    color: whitesmoke;
+    flex: 1;
 
+  }
+  @media screen and (max-width: 980px) {}
+  main-section {
+    width: 100%;
+  }
+}
   @media screen and (max-width: 768px) 
   {
     .jumbotron h1{
-      font-size: 330%;
+      font-size: 350%;
     }
     .btn {
-      font-size: 110;
+      font-size: 110%;
       padding: 7px 15px;
     }
     p {
       font-size: 100%;
       line-height: 150%;
     }
+    main-section {
+      width: 100%;
   }
 
 
@@ -113,4 +173,7 @@
       padding-left: 0;
       margin-left: 0;
       }  
+      main-section {
+        width: 100%;
+      }
   }
